@@ -9,13 +9,21 @@
   <body>
     <h1>World Clock 🕰️</h1>
     <form>
-      <input type="text" placeholder="Select a city" required />
+      <label for="city-selection">Select a city</label>
+      <input
+        type="text"
+        placeholder="Select a city"
+        minlength="3"
+        required
+        id="city-selection"
+      />
     </form>
+
     <h2>city</h2>
     <div>date</div>
     <div>time</div>
     <h2>city</h2>
-    <div><strong>date 2</strong>date 2</div>
+    <div><strong>date 2</strong></div>
     <div>time</div>
     <footer>
       This site was coded by
