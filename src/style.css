@@ -13,3 +13,9 @@ footer {
     padding-top: 25px;
  
 }
+
+/*make these horizontally aligned*/
+.cityDisplay {
+    display: center;
+    margin-top: 10px;
+}
