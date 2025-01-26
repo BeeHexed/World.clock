@@ -11,10 +11,10 @@ h1{
 footer {
     text-align: center;
     padding-top: 25px;
+    margin-top: 25px;
  
 }
 
-/*make these horizontally aligned*/
 .cityDisplay {
     display: flex;
     justify-content: space-around;
