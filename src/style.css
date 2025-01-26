@@ -16,6 +16,7 @@ footer {
 
 /*make these horizontally aligned*/
 .cityDisplay {
-    display: center;
+    display: flex;
+    justify-content: space-evenly;
     margin-top: 10px;
 }
