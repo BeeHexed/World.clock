@@ -10,17 +10,15 @@
   </head>
   <body>
     <h1>World Clock 🕰️</h1>
-    <form>
-      <label for="city-selection">Select a city</label>
-      <input
-        type="text"
-        placeholder="Select a city"
-        minlength="3"
-        required
-        id="city-selection"
-      />
-      <input type="submit" />
+    <label for="city-selection">Select a city</label>
+    <form action="/validate">
+      <select name="" id="city">
+        <option value="london">London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+        <option value="paris">Paris 🇫🇷</option>
+        <option value="tokyo">Tokyo 🇯🇵</option>
+      </select>
     </form>
+
     <div class="cityDisplay">
       <div>
         <h2>London 🇬🇧</h2>
