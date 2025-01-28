@@ -1,22 +1,31 @@
-/*
-stop here. Reapproach in am
+
 function selectedCity(event) {
   const selectedCity = event.target.value;
   {
     if (selectedCity === "london") {
-      alert("It is Saturday, October 8, 2023 2:51 PM in Europe/Paris");
+      alert(`It is ${timeZoneLondon}`);
     } else if (selectedCity === "paris") {
-      alert("💙");
+      alert(`It is ${timeZoneParis}`);
     } else if (selectedCity === "tokyo") {
-      alert("💛");
+      alert(`It is ${timeZoneTokyo}`);
     }
   }
 }
 
+let timeZoneLondon = moment()
+  .tz("Europe/London")
+  .format(`dddd, MMMM D, YYYY hh:mm a`);
+
+  let timeZoneParis = moment()
+  .tz("Europe/Paris")
+  .format(`dddd, MMMM D, YYYY hh:mm a`);
+
+  let timeZoneTokyo = moment().tz("Asia/Tokyo").format(`dddd, MMMM D, YYYY hh:mm a`);
+
 const citySelect = document.querySelector("#city");
 
 citySelect.addEventListener("change", selectedCity);
-*/
+
 
 
 
