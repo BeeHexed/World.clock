@@ -3,11 +3,11 @@ function selectedCity(event) {
   const selectedCity = event.target.value;
   {
     if (selectedCity === "london") {
-      alert(`It is ${timeZoneLondon}`);
+      alert(`It is ${timeZoneLondon} in London, UK`);
     } else if (selectedCity === "paris") {
-      alert(`It is ${timeZoneParis}`);
+      alert(`It is ${timeZoneParis} in Paris, France`);
     } else if (selectedCity === "tokyo") {
-      alert(`It is ${timeZoneTokyo}`);
+      alert(`It is ${timeZoneTokyo} in Tokyo, Japan`);
     }
   }
 }
@@ -21,6 +21,7 @@ let timeZoneLondon = moment()
   .format(`dddd, MMMM D, YYYY hh:mm a`);
 
   let timeZoneTokyo = moment().tz("Asia/Tokyo").format(`dddd, MMMM D, YYYY hh:mm a`);
+
 
 const citySelect = document.querySelector("#city");
 
