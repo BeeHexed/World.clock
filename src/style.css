@@ -5,15 +5,17 @@ background-color:#ffe4c4;
 
 h1{
     text-align: center;
-    color:rgb(47, 72, 88)
+    color:#ffeccb;
 }
 
 .box {
-    background-color: rgba(65, 105, 112, .8);
+    background-color: rgba(65, 105, 112, .70);
     color: #ffeccb;
     border-radius: 10px;
-    padding: 20px 10px 15px 10px;
-    margin: 0 15px 30px 15px;
+    padding: 20px 10px 50px 25px;
+    margin: 15px 15px 30px 15px;
+    border: solid 10px;
+    border-color: #b7a99a;
 }
 
 #city {
