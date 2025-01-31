@@ -15,6 +15,7 @@ h1{
     border-radius: 10px;
     padding: 20px 10px 50px 25px;
     margin: 0 auto;
+    margin-top: 30px;
     border: solid 20px;
     border-color: #b7a99a;
     box-shadow: 7px 7px 5px rgba(65, 105, 112, .2);
@@ -57,8 +58,8 @@ select
 }
 
 .timeDisplay {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 33px;
+    font-weight: bold;
 }
 
 footer {
