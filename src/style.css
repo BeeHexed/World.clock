@@ -13,10 +13,21 @@ h1{
     color: #ffeccb;
     border-radius: 10px;
     padding: 20px 10px 50px 25px;
-    margin: 15px 15px 30px 15px;
-    border: solid 10px;
+    margin: 0 auto;
+    border: solid 20px;
     border-color: #b7a99a;
+    box-shadow: 7px 7px 5px rgba(65, 105, 112, .2);
+    max-width: 75%;
 }
+
+.select {
+height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 
 #city {
     width: 20%;
