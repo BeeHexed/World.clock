@@ -6,20 +6,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>World Clock 🕰️</title>
+    <title>🌍 World Clock 🕰️</title>
   </head>
   <body>
     <div class="box">
       <h1>World Clock 🕰️</h1>
+      <div class="select">
+        <form action="/validate">
+          <select name="" id="city">
+            <option value="Select a city">Select a City</option>
 
-      <form action="/validate" class="select">
-        <select name="" id="city">
-          <option value="Select a city">Select a City</option>
-          <option value="london" id="london">London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-          <option value="paris" id="paris">Paris 🇫🇷</option>
-          <option value="tokyo" id="tokyo">Tokyo 🇯🇵</option>
-        </select>
-      </form>
+            <option value="london" id="london">London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+            <option value="paris" id="paris">Paris 🇫🇷</option>
+            <option value="tokyo" id="tokyo">Tokyo 🇯🇵</option>
+          </select>
+        </form>
+      </div>
 
       <div class="cityDisplay">
         <div>
