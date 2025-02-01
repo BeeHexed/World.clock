@@ -15,6 +15,7 @@ function selectedCity(event) {
 let timeZoneLondon = moment()
   .tz("Europe/London")
   .format(`dddd, MMMM D, YYYY hh:mm a`);
+  
 
   let timeZoneParis = moment()
   .tz("Europe/Paris")
