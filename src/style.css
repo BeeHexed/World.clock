@@ -26,7 +26,8 @@ h2 {
     margin-top: 30px;
     border: solid 20px;
     border-color: #b7a99a;
-    box-shadow: 7px 7px 5px rgba(65, 105, 112, .2);
+box-shadow: rgba(65,
+    105, 112, 0.1) 0px 20px 25px -5px, rgba(65, 105, 112, 0.04) 0px 10px 10px -5px;
     max-width: 75%;
 }
 
@@ -63,7 +64,10 @@ select
 .cityDisplay {
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
+    margin: 10px 0 20px 0;
+    padding: 10px 0 30px 0;
+    border-bottom: 1px dashed rgba(183, 169, 154, .9);
+    border-top:  1px dashed rgba(183, 169, 154, .9);
 }
 
 
@@ -74,8 +78,10 @@ select
 
 footer {
     text-align: center;
-    padding-top: 25px;
+    font-size: 12px;
+    padding-top: 20px;
     margin-top: 25px;
+    color: rgb(65, 105, 112);
  
 }
 
