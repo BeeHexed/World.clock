@@ -1,6 +1,7 @@
 
 body {
 background-color:#ffe4c4;
+font-family: sans-serif;
 }
 
 h1{
@@ -9,6 +10,13 @@ h1{
     color:#ffeccb;
 }
 
+h2 {
+    margin: 0 0 10px 0;
+}
+
+.date {
+    opacity: .7;
+}
 .box {
     background-color: rgba(65, 105, 112, .70);
     color: #ffeccb;
@@ -42,13 +50,14 @@ select
     justify-content: center;
 }
 
-
 #city {
-    width: 20%;
+    width: 65%;
 }
 
 .city {
- font-size: 20px;
+ font-size: 18px;
+ margin: 10px 0;
+
 }
 
 .cityDisplay {
@@ -57,9 +66,10 @@ select
     margin-top: 10px;
 }
 
+
 .timeDisplay {
-    font-size: 33px;
-    font-weight: bold;
+    font-size: 31px;
+    font-weight: 500;
 }
 
 footer {
