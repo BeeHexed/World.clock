@@ -90,7 +90,8 @@ a {
     color: rgba(65, 105, 112, .8);
     text-decoration: none;
     font-weight: 800;
-    
 }
 
-
+a:hover {
+    text-decoration: underline;
+}
