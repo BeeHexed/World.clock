@@ -35,14 +35,15 @@ form {
 width: 100%;
     height: 50px;
     display: flex;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
+    
     }
        
-select
-{
+select{
     font-size: 16px;
-        width: 300px;
+    width: 300px;
+    color: rgba(65, 105, 112, .9) ;
 }
 
 .select {
@@ -81,8 +82,15 @@ footer {
     font-size: 12px;
     padding-top: 20px;
     margin-top: 25px;
-    color: rgb(65, 105, 112);
+    color: rgba(65, 105, 112, .6);
  
+}
+
+a {
+    color: rgba(65, 105, 112, .8);
+    text-decoration: none;
+    font-weight: 800;
+    
 }
 
 
