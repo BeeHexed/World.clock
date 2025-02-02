@@ -1,14 +1,10 @@
-
-//London
-setInterval(function() {
+function updateTime(){
+//London{
 let firstCityDateElement = document.querySelector("#first-date");
 let firstCityTimeElement = document.querySelector("#first-time");
 let timeOne = moment().tz("Europe/London");
 firstCityDateElement.innerHTML= timeOne.format("dddd, MMMM Do YYYY");
-firstCityTimeElement.innerHTML = timeOne.format(`h:mm:ss [<small>]A[</small>]`)
-}, 1000);
-
-
+firstCityTimeElement.innerHTML = timeOne.format(`h:mm:ss [<small>]A[</small>]`);
 
 
 //New York
@@ -33,3 +29,9 @@ let fourthCityTimeElement = document.querySelector("#fourth-time");
 let timeFour = moment().tz("Europe/Rome");
 fourthCityDateElement.innerHTML= timeFour.format("dddd, MMMM Do YYYY");
 fourthCityTimeElement.innerHTML = timeFour.format(`h:mm:ss [<small>]A[</small>]`)
+
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+
