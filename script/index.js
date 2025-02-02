@@ -20,5 +20,16 @@ secondCityDateElement.innerHTML= timeTwo.format("dddd, MMMM Do YYYY");
 secondCityTimeElement.innerHTML = timeTwo.format(`h:mm:ss [<small>]A[</small>]`)
 }, 1000);
 
+//Tokyo
+let thirdCityDateElement = document.querySelector("#third-date");
+let thirdCityTimeElement = document.querySelector("#third-time");
+let timeThree = moment().tz("Asia/Tokyo");
+thirdCityDateElement.innerHTML= timeThree.format("dddd, MMMM Do YYYY");
+thirdCityTimeElement.innerHTML = timeThree.format(`h:mm:ss [<small>]A[</small>]`)
 
-
+//Rome
+let fourthCityDateElement = document.querySelector("#fourth-date");
+let fourthCityTimeElement = document.querySelector("#fourth-time");
+let timeFour = moment().tz("Europe/Rome");
+fourthCityDateElement.innerHTML= timeFour.format("dddd, MMMM Do YYYY");
+fourthCityTimeElement.innerHTML = timeFour.format(`h:mm:ss [<small>]A[</small>]`)
