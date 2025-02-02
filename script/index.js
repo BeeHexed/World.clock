@@ -1,44 +1,20 @@
 
-function selectedCity(event) {
-  const selectedCity = event.target.value;
-  {
-    if (selectedCity === "london") {
-      alert(`It is ${timeZoneLondon} in London, UK`);
-    } else if (selectedCity === "paris") {
-      alert(`It is ${timeZoneParis} in Paris, France`);
-    } else if (selectedCity === "tokyo") {
-      alert(`It is ${timeZoneTokyo} in Tokyo, Japan`);
-    }
-  }
-}
-
-let timeZoneLondon = moment()
-  .tz("Europe/London")
-  .format(`dddd, MMMM D, YYYY hh:mm a`);
-  
-
-  let timeZoneParis = moment()
-  .tz("Europe/Paris")
-  .format(`dddd, MMMM D, YYYY hh:mm a`);
-
-  let timeZoneTokyo = moment().tz("Asia/Tokyo").format(`dddd, MMMM D, YYYY hh:mm a`);
-
-
-const citySelect = document.querySelector("#city");
-
-citySelect.addEventListener("change", selectedCity);
+//London
+let firstCityDateElement = document.querySelector("#first-date");
+let firstCityTimeElement = document.querySelector("#first-time");
+let timeOne = moment().tz("Europe/London");
+firstCityDateElement.innerHTML= timeOne.format("dddd, MMMM Do YYYY");
+firstCityTimeElement.innerHTML = timeOne.format(`h:mm:ss [<small>]A[</small>]`);
 
 
 
 
-
-let firstCity = moment().format("dddd, MMMM D, YYYY");
-let cityElement = document.querySelector("#firstCity");
-cityElement.innerHTML = `${firstCity}`;
-
-let currentTime = moment().format("HH:mm:ss");
-let timeElement = document.querySelector("#time");
-timeElement.innerHTML = `${currentTime}`;
+//New York
+let secondCityDateElement = document.querySelector("#second-date");
+let secondCityTimeElement = document.querySelector("#second-time");
+let timeTwo = moment().tz("America/New_York");
+secondCityDateElement.innerHTML= timeTwo.format("dddd, MMMM Do YYYY");
+secondCityTimeElement.innerHTML = timeTwo.format(`h:mm:ss [<small>]A[</small>]`);
 
 
 
