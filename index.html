@@ -11,49 +11,54 @@
   <body>
     <div class="box">
       <h1>World Clock</h1>
-      <div class="select">
-        <form action="select">
-          <select name="" id="city">
-            <option value="Select a city">Select a City</option>
+      <div id="dropdown">
+        <div class="select">
+          <form action="select">
+            <select name="" id="city">
+              <option value="Select a city">Select a City</option>
 
-            <option value="london" id="london">London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-            <option value="paris" id="paris">Paris 🇫🇷</option>
-            <option value="tokyo" id="tokyo">Tokyo 🇯🇵</option>
-          </select>
-        </form>
+              <option value="Europe/London" id="london">London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+              <option value="Europe/Paris" id="paris">Paris 🇫🇷</option>
+              <option value="Asia/Tokyo" id="tokyo">Tokyo 🇯🇵</option>
+              <option value="America/New_York" id="newYork">New York🇺🇸</option>
+            </select>
+          </form>
+        </div>
       </div>
 
-      <div class="cityDisplay">
-        <div>
-          <div class="city">
-            <h2>London 🇬🇧</h2>
+      <div id="cities">
+        <div class="cityDisplay">
+          <div>
+            <div class="city">
+              <h2>London 🇬🇧</h2>
+            </div>
+            <div class="date" id="first-date"></div>
+            <div class="timeDisplay" id="first-time"></div>
           </div>
-          <div class="date" id="first-date"></div>
-          <div class="timeDisplay" id="first-time"></div>
-        </div>
 
-        <div>
-          <div class="city">
-            <h2>Rome 🇮🇹</h2>
+          <div>
+            <div class="city">
+              <h2>Rome 🇮🇹</h2>
+            </div>
+            <div class="date" id="second-date"></div>
+            <div class="timeDisplay" id="second-time"></div>
           </div>
-          <div class="date" id="second-date"></div>
-          <div class="timeDisplay" id="second-time"></div>
-        </div>
 
-        <div>
-          <div class="city">
-            <h2>New York 🇺🇸</h2>
+          <div>
+            <div class="city">
+              <h2>New York 🇺🇸</h2>
+            </div>
+            <div class="date" id="third-date"></div>
+            <div class="timeDisplay" id="third-time"></div>
           </div>
-          <div class="date" id="third-date"></div>
-          <div class="timeDisplay" id="third-time"></div>
-        </div>
 
-        <div>
-          <div class="city">
-            <h2>Tokyo 🇯🇵</h2>
+          <div>
+            <div class="city">
+              <h2>Tokyo 🇯🇵</h2>
+            </div>
+            <div class="date" id="fourth-date"></div>
+            <div class="timeDisplay" id="fourth-time"></div>
           </div>
-          <div class="date" id="fourth-date"></div>
-          <div class="timeDisplay" id="fourth-time"></div>
         </div>
       </div>
     </div>
