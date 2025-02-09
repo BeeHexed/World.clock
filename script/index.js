@@ -37,11 +37,12 @@ fourthCityTimeElement.innerHTML = timeFour.format(`h:mm:ss [<small>]A[</small>]`
 
 function updateCity(event) {
     let cityTimeZone= event.target.value;
+    let cityName = cityTimeZone.replace('_', ' ');
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities")
   citiesElement.innerHTML = `
     <div class="city">
-              <h2>${cityTimeZone}</h2>
+              <h2>${cityName}</h2>
             </div>
             <div class="date" id="first-date">${cityTime.format("MM Do YYYY")}</div>
             <div class="timeDisplay" id="first-time">${cityTime.format("HH:mm:ss")}</div>`
