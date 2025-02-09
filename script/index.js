@@ -35,3 +35,13 @@ fourthCityDateElement.innerHTML= timeFour.format("MMMM Do, YYYY");
 fourthCityTimeElement.innerHTML = timeFour.format(`h:mm:ss [<small>]A[</small>]`);
 }, 1000);
 
+function updateCity(event) {
+    let cityTimeZone= event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#cities")
+  citiesElement.innerHTML = cityTimeZone;
+
+}
+
+let dropdownElement = document.querySelector("#dropdown")
+dropdownElement.addEventListener("change", updateCity);
