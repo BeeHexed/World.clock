@@ -39,8 +39,12 @@ function updateCity(event) {
     let cityTimeZone= event.target.value;
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities")
-  citiesElement.innerHTML = cityTimeZone;
-
+  citiesElement.innerHTML = `
+    <div class="city">
+              <h2>${cityTimeZone}</h2>
+            </div>
+            <div class="date" id="first-date">${cityTime.format("MM Do YYYY")}</div>
+            <div class="timeDisplay" id="first-time">${cityTime.format("HH:mm:ss")}</div>`
 }
 
 let dropdownElement = document.querySelector("#dropdown")
