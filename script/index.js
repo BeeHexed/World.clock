@@ -55,3 +55,5 @@ function updateTime() {
 
 let dropdownElement = document.querySelector("#city")
 dropdownElement.addEventListener("change", updateCity);
+
+let selectedCity = false
