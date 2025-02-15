@@ -46,7 +46,9 @@ function updateCity(event) {
   let citiesElement = document.querySelector("#cities")
   citiesElement.innerHTML = `
      <div class="date" id="first-date">${moment().tz(cityTimeZone).format("Do MMMM YYYY ")}</div>
-        <div class="timeDisplay" id="first-time">${moment().tz(cityTimeZone).format("h:mm [<small>]A[</small>]")}</div>`
+        <div class="timeDisplay" id="first-time">${moment().tz(cityTimeZone).format("h:mm [<small>]A[</small>]")}</div>
+        <a href="index.html">Homepage</a>
+        `
 };
 
 function updateTime() {
