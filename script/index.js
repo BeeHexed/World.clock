@@ -42,6 +42,7 @@ function updateCity(event) {
     let cityTimeZone= event.target.value;
     let cityName = cityTimeZone.replace('_', ' ');
   let cityTime = moment().tz(cityTimeZone);
+  
   let citiesElement = document.querySelector("#cities")
   citiesElement.innerHTML = `
      <div class="date" id="first-date">${moment().tz(cityTimeZone).format("Do MMMM YYYY ")}</div>
@@ -57,3 +58,5 @@ let dropdownElement = document.querySelector("#city")
 dropdownElement.addEventListener("change", updateCity);
 
 let selectedCity = false
+if (cityTimeZone === current) {
+        cityTimeZone = moment.tz.guess();}
