@@ -47,7 +47,7 @@ function updateCity(event) {
   citiesElement.innerHTML = `
      <div class="date" id="first-date">${moment().tz(cityTimeZone).format("Do MMMM YYYY ")}</div>
         <div class="timeDisplay" id="first-time">${moment().tz(cityTimeZone).format("h:mm [<small>]A[</small>]")}</div>
-        <a href="index.html">Homepage</a>
+        <a href="index.html">🏡 homepage </a>
         `
 };
 
@@ -62,3 +62,5 @@ dropdownElement.addEventListener("change", updateCity);
 let selectedCity = false
 if (cityTimeZone === current) {
         cityTimeZone = moment.tz.guess();}
+
+   
